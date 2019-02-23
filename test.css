@@ -1,0 +1,30 @@
+.button-primary:hover::before {
+  /*opacity: 0;*/
+ transform:  translate(115px,0px);
+ /*transform: 2s  translate(0px,0px);*/
+
+
+}
+
+.button-primary::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+  /*  right: -2px;
+    bottom: -2px;*/
+    left: 0;
+
+    width: 20px;
+    height: 20px;
+   /* border-radius: inherit;*/
+   border-radius:50%;
+    z-index: -1;
+    background: -webkit-gradient(linear, left top, right top, from(#50e590), to(#35c8a4));
+    background: -webkit-linear-gradient(left, #50e590, #35c8a4);
+    background: -o-linear-gradient(left, #50e590, #35c8a4);
+    background: linear-gradient(to right, #50e590, #35c8a4);
+    opacity: 1;
+    -webkit-transition: inherit;
+    -o-transition: inherit;
+    transition: inherit;
+}
